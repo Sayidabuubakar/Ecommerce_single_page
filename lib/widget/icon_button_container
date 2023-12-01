@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart'
+
+class IconButtonContainer extends StatelessWidget {
+  const IconButtonContainer({
+    super.key,
+    required this.icon,
+  });
+
+  final Icon icon;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: const Color(0xff28E5E4),
+          ),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        width: 80,
+        height: 80,
+        child: icon);
+  }
+}
